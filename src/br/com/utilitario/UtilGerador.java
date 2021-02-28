@@ -179,5 +179,40 @@ public class UtilGerador {
         }
         return Integer.parseInt(ano);
     }
+    
+    public static String gerarCidade() {
+        String cidade = "";
+        String[] cidades = {"Florianópolis", "Lajes", "São Joaquim", "Laguna", "Criciuma", "Curitiba", "Balneariu Camburiu"};
+        int indice = (int) (Math.random() * cidades.length);
+        cidade += cidades[indice];
 
+        return cidade;
+    }
+    
+    public static String gerarBairro() {
+        String bairro = "";
+        String[] bairros = {"Capoeiras", "Centro", "Campinas", "Canto", "Forquilhinhas", "São Sebastião", "Aririu"};
+        int indice = (int) (Math.random() * bairros.length);
+        bairro += bairros[indice];
+
+        return bairro;
+    }    
+
+    public static String gerarEstado() {
+        String estado = "";
+        String[] estados = {"Santa Catarina", "Rio do Sul", "Paraná", "São Paulo"};
+        int indice = (int) (Math.random() * estados.length);
+        estado += estados[indice];
+
+        return estado;
+    }
+    
+     public static String gerarLogradouro() {
+        String logradouro = "";
+        String[] logradouros = {"Paula Ramos", "Fermino Costa", "Coronel Joaquim", "Felipe Shimidt", "Rosa Silva", "Jardim Silva", "4 de março", "Sem Saída", "Em construção", "Felicidade e harmonia"};
+        int indice = (int) (Math.random() * logradouros.length);
+        logradouro += logradouros[indice];
+
+        return logradouro;
+    }
 }
